@@ -12,21 +12,16 @@ else
     brew update
 fi
 
-programs_to_install=(
-    brew
-    tmux
-    git
-)
+# This need some work...
+# Install Python, PIP, vim and all that jazz
+#    brew install python
+#    brew tap hombre/dupes
+#    easy_install pip
+#    pip install --user git+git://github.com/Lokaltog/powerline
+#    brew install vim --with-python --with-ruby --with-perl
+#    brew install macvim --env-std --override-system-vim
+#    pip install --user git+git://github.com/Lokaltog/powerline
 
-for f in ${programs_to_install[@]}
-do
-    which -s $f
-    if [[ $? != 0 ]] ; then
-        brew install $i
-    else
-        brew update $i
-    fi
-done
 
 # Install Cask
 brew tap caskroom/cask
