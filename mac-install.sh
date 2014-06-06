@@ -2,9 +2,6 @@
 # Script author: Jon Crain
 # Version 1.0 || 2014-6-6
 
-# Install Xcode command line tools
-xcode-select --install
-
 # Check if Homebrew is Installed and if not, Install Homebrew
 which -s brew
 if [[ $? != 0 ]] ; then
