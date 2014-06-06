@@ -44,8 +44,12 @@ brew cask install flip4mac
 brew cask install flux
 brew cask install gas-mask
 brew cask install google-chrome
+brew cask install google-drive
+brew cask install google-hangouts
 brew cask install handbrake
 brew cask install iterm2
+brew cask install kaleidoscope
+brew cask install navicat-premium
 brew cask install nvalt
 brew cask install onepassword
 brew cask install remote-desktop-connection
