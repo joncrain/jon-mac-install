@@ -2,6 +2,9 @@
 # Script author: Jon Crain
 # Version 1.0 || 2014-6-6
 
+# Install Xcode command line tools
+xcode-select --install
+
 # Check if Homebrew is Installed and if not, Install Homebrew
 which -s brew
 if [[ $? != 0 ]] ; then
@@ -12,10 +15,21 @@ else
     brew update
 fi
 
-# Check if Git is installed
-which -s git || brew install git
-brew install tmux
-brew install vim --with-python
+programs_to_install=(
+    brew
+    tmux
+    git
+)
+
+for f in ${programs_to_install[@]}
+do
+    which -s $f
+    if [[ $? != 0 ]] ; then
+        brew install $i
+    else
+        brew update $i
+    fi
+done
 
 # Install Cask
 brew tap caskroom/cask
