@@ -32,6 +32,9 @@ done
 brew tap caskroom/cask
 brew install caskroom/cask/brew-cask
 
+# Specify your defaults in this environment variable
+export HOMEBREW_CASK_OPTS="--appdir=/Applications --caskroom=/usr/local/bin/Caskroom"
+
 brew cask install alfred
 brew cask install appcleaner
 brew cask install audacity
