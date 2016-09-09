@@ -40,7 +40,7 @@ brew cask install cyberduck
 brew cask install dropbox
 brew cask install filezilla
 brew cask install firefox
-brew cask install fitbit-connect
+# brew cask install fitbit-connect
 brew cask install flux
 brew cask install franz
 brew cask install gas-mask
