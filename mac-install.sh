@@ -1,6 +1,6 @@
 #!/bin/bash
 # Script author: Jon Crain
-# Version 1.1 || 2014-12-4
+# Version 1.2 || 2016-9-9
 
 # Check if Homebrew is Installed and if not, Install Homebrew
 which -s brew
@@ -30,34 +30,39 @@ brew install caskroom/cask/brew-cask
 # Specify your defaults in this environment variable
 export HOMEBREW_CASK_OPTS="--appdir=/Applications --caskroom=/usr/local/bin/Caskroom"
 
+brew cask install 1password
 brew cask install appcleaner
-brew cask install amazon-cloud-drive
-brew cask install amazon-music
 brew cask install atom
-brew cask install box-sync
+brew cask install autodmg
 brew cask install caffeine
+brew cask install createuserpkg
+brew cask install cyberduck
 brew cask install dropbox
-brew cask install flip4mac
+brew cask install filezilla
+brew cask install firefox
+brew cask install fitbit-connect
 brew cask install flux
+brew cask install franz
 brew cask install gas-mask
+brew cask install grandperspective
+brew cask install go2shell
 brew cask install google-chrome
-brew cask install google-drive
-brew cask install google-hangouts
-brew cask install handbrake
+brew cask install google-photos-backup
 brew cask install iterm2
 brew cask install kaleidoscope
+brew cask install karabiner
 brew cask install navicat-premium
 brew cask install nvalt
-brew cask install onepassword
-brew cask install silverlight
-brew cask install skydrive
+brew cask install postman
+brew cask install quitter
+brew cask install rescuetime
 brew cask install skype
 brew cask install slack
 brew cask install spectacle
 brew cask install spotify
 brew cask install steam
-brew cask install sublime-text
 brew cask install textexpander
+brew cask install textwrangler
 brew cask install vagrant
 brew cask install virtualbox
 brew cask install vlc
