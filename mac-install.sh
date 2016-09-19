@@ -19,7 +19,6 @@ fi
 #    easy_install pip
 #    pip install --user git+git://github.com/Lokaltog/powerline
 #    brew install vim --with-python --with-ruby --with-perl
-#    brew install macvim --env-std --override-system-vim
 #    pip install --user git+git://github.com/Lokaltog/powerline
 
 
@@ -51,6 +50,7 @@ brew cask install google-photos-backup
 brew cask install iterm2
 brew cask install kaleidoscope
 brew cask install karabiner
+brew cask install macvim
 brew cask install navicat-premium
 brew cask install nvalt
 brew cask install postman
