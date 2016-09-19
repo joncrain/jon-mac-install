@@ -12,6 +12,14 @@ else
     brew update
 fi
 
+mkdir ~/.vim ; cd ~/.vim ; mkdir backups ; mkdir colors ; mkdir swaps; mkdir undo;
+defaults write com.apple.driver.AppleBluetoothMultitouch.mouse MouseButtonMode TwoButton
+defaults write com.apple.driver.AppleBluetoothMultitouch.mouse MouseOneFingerDoubleTapGesture 1
+defaults write -g com.apple.mouse.scaling 3.0
+defaults write -g com.apple.trackpad.scaling 3.0
+defaults write com.apple.driver.applebluetoothmultitouch.trackpad.plist Clicking 1
+defaults write com.apple.driver.applebluetoothmultitouch.trackpad.plist Clicking 1
+
 # This need some work...
 # Install Python, PIP, vim and all that jazz
 #    brew install python
