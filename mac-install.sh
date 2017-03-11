@@ -1,15 +1,20 @@
 #!/bin/bash
 # Script author: Jon Crain
 # Version 1.2 || 2016-9-9
+# This script is not meant to be called as part of the deployment/imaging
+# It's simply for when I get a new computer or loaner or something...
 
 # Check if Homebrew is Installed and if not, Install Homebrew
 which -s brew
 if [[ $? != 0 ]] ; then
-    # Install Homebrew
-    # https://github.com/mxcl/homebrew/wiki/installation
-    /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+  echo "Installing Xcode ..."
+  xcode-select --install
+  echo "Installing Homebrew ..."
+  # https://github.com/mxcl/homebrew/wiki/installation
+  /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 else
-    brew update
+  echo "Updating Homebrew ..."
+  brew update
 fi
 
 mkdir ~/.vim ; cd ~/.vim ; mkdir backups ; mkdir colors ; mkdir swaps; mkdir undo;
@@ -47,7 +52,6 @@ brew cask install cyberduck
 brew cask install dropbox
 brew cask install filezilla
 brew cask install firefox
-# brew cask install fitbit-connect
 brew cask install flux
 brew cask install franz
 brew cask install gas-mask
@@ -56,6 +60,7 @@ brew cask install go2shell
 brew cask install google-chrome
 brew cask install google-photos-backup
 brew cask install iterm2
+brew cask install java
 brew cask install kaleidoscope
 brew cask install karabiner
 brew cask install macvim
@@ -75,4 +80,11 @@ brew cask install vagrant
 brew cask install virtualbox
 brew cask install vlc
 
+echo "Cleaning up ..."
+brew cleanup
 brew cask cleanup
+
+mkdir ~/Projects
+cd ~/Projects
+# inception
+git clone https://github.com/joncrain/jon-mac-install.git
