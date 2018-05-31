@@ -104,3 +104,4 @@ git clone https://github.com/joncrain/jon-mac-install.git
 # git clone https://code.cmich.edu/mac/munki-repo.git
 # git clone https://code.cmich.edu/mac/autopkgr.git
 cp ~/Projects/jon-mac-install/.bash* ~/
+source ~/.bash_profile
