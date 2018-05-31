@@ -20,7 +20,6 @@ fi
 mkdir ~/.vim ; cd ~/.vim ; mkdir backups ; mkdir colors ; mkdir swaps; mkdir undo;
 git clone https://github.com/flazz/vim-colorschemes.git ~/.vim/tmp
 cp ~/.vim/tmp/colors/* ~/.vim/colors/
-git clone https://github.com/flazz/vim-colorschemes.git ~/.vim/tmp
 rm -rf ~/.vim/tmp/
 echo 'colorscheme materialtheme' >> ~/.vimrc
 
