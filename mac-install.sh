@@ -18,6 +18,12 @@ else
 fi
 
 mkdir ~/.vim ; cd ~/.vim ; mkdir backups ; mkdir colors ; mkdir swaps; mkdir undo;
+git clone https://github.com/flazz/vim-colorschemes.git ~/.vim/tmp
+cp ~/.vim/tmp/colors/* ~/.vim/colors/
+git clone https://github.com/flazz/vim-colorschemes.git ~/.vim/tmp
+rm -rf ~/.vim/tmp/
+echo 'colorscheme materialtheme' >> ~/.vimrc
+
 defaults write com.apple.driver.AppleBluetoothMultitouch.mouse MouseButtonMode TwoButton
 defaults write com.apple.driver.AppleBluetoothMultitouch.mouse MouseOneFingerDoubleTapGesture 1
 defaults write -g com.apple.mouse.scaling 3.0
