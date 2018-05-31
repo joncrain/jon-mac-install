@@ -98,9 +98,9 @@ mkdir ~/Projects
 cd ~/Projects
 # inception
 git clone https://github.com/joncrain/jon-mac-install.git
-git clone https://code.cmich.edu/mac/deploystudio.git
-git clone https://code.cmich.edu/mac/profiles.git
-git clone https://code.cmich.edu/mac/packages.git
-git clone https://code.cmich.edu/mac/munki-repo.git
-git clone https://code.cmich.edu/mac/autopkgr.git
-
+# git clone https://code.cmich.edu/mac/deploystudio.git
+# git clone https://code.cmich.edu/mac/profiles.git
+# git clone https://code.cmich.edu/mac/packages.git
+# git clone https://code.cmich.edu/mac/munki-repo.git
+# git clone https://code.cmich.edu/mac/autopkgr.git
+cp ~/Projects/jon-mac-install/.bash* ~/
